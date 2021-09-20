@@ -12,11 +12,13 @@ const db = mysql.createConnection(
     console.log(`Connected to the work_db database.`)
 );
 
-connection.connect((err)=> {
+db.connect((err)=> {
     if(err) throw err;
-    console.log('connect as id' + connection.threadId)
+    console.log('connect as id' + db.threadId)
 });
 
-connection.query = util.promisify(connection.query);
-module.exports = connection; 
+db.query = util.promisify(db.query);
+module.exports = db; 
+
+module.exports = db;
 
