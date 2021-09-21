@@ -2,7 +2,7 @@
 
 # by Charlotte Clark
 
-## Acceptance Criteria
+## Procedure
 
 ```md
 When you open the program, you will be presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
